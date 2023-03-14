@@ -1,0 +1,157 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_form1 DIALOGEX 0, 0, 419, 184
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "计算最短路径"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID_txtNode1,132,33,48,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_txtNode2,132,63,48,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_txtDist,132,93,48,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",ID_cmdAdd,132,111,50,14
+    PUSHBUTTON      "删除",ID_cmdDel,132,127,50,14
+    PUSHBUTTON      "撤销",ID_cmdUndo,132,142,50,14
+    PUSHBUTTON      "删除全部",ID_cmdClear,132,158,50,14
+    EDITTEXT        ID_txtNodeCalc1,210,92,48,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_txtNodeCalc2,210,122,48,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "计算最短路",ID_cmdDo,209,141,49,14
+    PUSHBUTTON      "退出",ID_cmdExit,209,158,50,14
+    EDITTEXT        ID_txtDistResu,309,160,87,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         ID_lstPath,276,78,120,66,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",ID_lsvDists,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,18,120,156
+    LTEXT           "结点1：",IDC_STATIC,132,21,31,8
+    LTEXT           "结点2：",IDC_STATIC,132,51,31,8
+    LTEXT           "距离：",IDC_STATIC,132,81,27,8
+    LTEXT           "源点：",IDC_STATIC,210,80,27,8
+    LTEXT           "目标点：",IDC_STATIC,210,110,35,8
+    LTEXT           "计算未开始",ID_lblStatus,264,149,138,8
+    LTEXT           "最短距离：",IDC_STATIC,264,162,44,8
+    LTEXT           "本程序利用Dijkstra算法，计算源点距离目标点的最短路径。数据可以在左侧逐一手动添加，也可在文本框中提前编辑再直接粘贴，但请注意，文本文件格式需满足每个条目仅占一行，每行格式为【结点1\\t结点2\\距离\\n】",IDC_STATIC,210,18,192,42
+    GROUPBOX        "数据导入",IDC_STATIC,0,6,186,174
+    GROUPBOX        "数据运算",IDC_STATIC,204,66,204,114
+    GROUPBOX        "程序说明",IDC_STATIC,204,6,204,60
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_form1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_form1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "快捷菜单"
+    BEGIN
+        MENUITEM "复制（Ctrl+C）",                  ID_mnuPopCopy
+        MENUITEM "粘贴（Ctrl+V）",                  ID_mnuPopPaste
+        MENUITEM "撤销（Ctrl+Z）",                  ID_mnuPopUndo
+        MENUITEM "删除（Ctrl+D）",                  ID_mnuPopDel
+        MENUITEM "删除全部（Alt+D）",                 ID_mnuPopClear
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "main.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

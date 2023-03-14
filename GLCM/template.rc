@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_form1 DIALOGEX 0, 0, 401, 208
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "GLCM"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID_txtD,54,36,72,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "批量计算...",ID_cmdGLCMBat,265,36,66,14
+    PUSHBUTTON      "退出",ID_cmdExit,340,36,50,14
+    PUSHBUTTON      "计算",ID_cmdGLCM,205,36,50,14
+    LTEXT           "请选择一个位图文件:",IDC_STATIC,6,6,81,8
+    LTEXT           "GLCM参数d:",IDC_STATIC,6,38,43,8
+    COMBOBOX        ID_cboFile,6,18,324,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "浏览...",ID_cmdBrow,340,16,50,14
+    CONTROL         "",ID_pic1,"Static",SS_BLACKFRAME,6,58,138,104
+    LTEXT           "ASM:",IDC_STATIC,160,56,51,8
+    EDITTEXT        ID_txtASM,214,54,60,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "缩放图片",ID_chkStretch,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,168,50,10
+    LTEXT           "Contrast:",IDC_STATIC,160,70,31,8
+    LTEXT           "Correlation:",IDC_STATIC,160,84,51,8
+    LTEXT           "Variance:",IDC_STATIC,160,97,32,8
+    LTEXT           "Homogeneity:",IDC_STATIC,160,112,51,8
+    LTEXT           "SumAverage:",IDC_STATIC,160,126,46,8
+    LTEXT           "SumVar:",IDC_STATIC,160,140,51,8
+    LTEXT           "SumEntropy:",IDC_STATIC,160,154,43,8
+    LTEXT           "Entropy:",IDC_STATIC,160,168,51,8
+    LTEXT           "DiffVar:",IDC_STATIC,160,182,49,8
+    EDITTEXT        ID_txtContrast,214,68,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtCorrelation,214,82,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtVariance,214,96,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtHomogeneity,214,110,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtSumAverage,214,124,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtSumVar,214,138,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtSumEntropy,214,152,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtEntropy,214,166,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtDiffVar,214,180,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtDiffEntropy,330,54,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtDissimilarity,330,68,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtMean,330,82,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtClusterShade,330,96,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtClusterProm,330,110,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtMaxProb,330,124,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtMinProb,330,138,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtStrength,330,152,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtMassX,330,166,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        ID_txtMassY,330,180,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "DiffEntropy:",IDC_STATIC,276,54,51,8
+    LTEXT           "Dissimilarity:",IDC_STATIC,276,68,43,8
+    LTEXT           "Mean:",IDC_STATIC,276,82,51,8
+    LTEXT           "ClusterShade:",IDC_STATIC,276,95,47,8
+    LTEXT           "ClusterProm:",IDC_STATIC,276,110,51,8
+    LTEXT           "MaxProb:",IDC_STATIC,276,124,32,8
+    LTEXT           "MinProb:",IDC_STATIC,276,138,51,8
+    LTEXT           "Strength:",IDC_STATIC,276,152,32,8
+    LTEXT           "MassX:",IDC_STATIC,276,166,51,8
+    LTEXT           "MassY:",IDC_STATIC,276,180,49,8
+END
+
+ID_frmBatch DIALOGEX 0, 0, 389, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "批量计算"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "一类图像文件目录:",IDC_STATIC,12,18,78,8
+    COMBOBOX        ID_cboImgPath,12,29,300,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "浏览...",ID_cmdBrowImgPath,324,28,50,14
+    LTEXT           "本类图像类别标签:",IDC_STATIC,12,51,78,8
+    EDITTEXT        ID_txtClassLabel,108,48,150,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "批量计算GLCM特征值",ID_cmdCalcBatch,264,47,109,14
+    LTEXT           "Static",ID_lblStatusBatch,12,72,264,12
+    CONTROL         "",ID_proBatch,"msctls_progress32",WS_BORDER,276,69,96,14
+    GROUPBOX        "批量计算图像GLCM特征结果存入数据库",IDC_STATIC,6,6,372,84
+    LTEXT           "阳性类别",IDC_STATIC,108,108,78,8
+    LTEXT           "阴性类别",IDC_STATIC,244,108,78,8
+    COMBOBOX        ID_cboPosi,108,120,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_cboNega,244,120,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "v.s.",ID_lblVS,186,108,48,20
+    LTEXT           "特征值选择",IDC_STATIC,12,140,54,8
+    COMBOBOX        ID_cboFeatSelect,78,138,96,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",ID_cmdFeatAdd,12,152,42,14
+    PUSHBUTTON      "删除",ID_cmdFeatDel,60,153,42,14
+    PUSHBUTTON      "默认",ID_cmdFeatDefault,108,153,42,14
+    EDITTEXT        ID_txtFeatSelect,180,138,186,30,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "特征文件保存在:",IDC_STATIC,12,174,78,8
+    COMBOBOX        ID_cboDataFile,90,173,228,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "浏览...",ID_cmdBrowDataFile,323,172,50,14
+    LTEXT           "核函数:",IDC_STATIC,12,194,42,8
+    COMBOBOX        ID_cboKernels,60,192,156,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "其他参数:",IDC_STATIC,229,194,48,8
+    EDITTEXT        ID_txtParams,282,192,91,14,ES_AUTOHSCROLL
+    LTEXT           "交叉验证:",IDC_STATIC,12,213,42,8
+    COMBOBOX        ID_cboFold,60,211,78,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "训练模型",ID_cmdTrain,229,210,60,14
+    PUSHBUTTON      "生成model文件...",ID_cmdGenModel,294,210,78,14
+    LTEXT           "Static",ID_lblStatusSVM,12,233,348,12
+    GROUPBOX        "支持向量机分类:",IDC_STATIC,6,96,372,156
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_form1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    ID_frmBatch, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_form1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_frmBatch AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "main.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
